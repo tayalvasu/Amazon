@@ -1,67 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/returns_order.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>Orders</title>
+
+    <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Here are the CSS files for this page. -->
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/amazon-header.css">
+    <link rel="stylesheet" href="styles/pages/orders.css">
   </head>
   <body>
-    <header>
-      <div class="navbar">
-        <div class="nav-logo border">
-          <div class="logo"></div>
-        </div>
-
-        <div class="nav-address border">
-          <p class="add-first">Deleiver to</p>
-          <div class="add-icon">
-            <i class="fa-solid fa-location-dot"></i>
-            <p class="add-second">India</p>
-          </div>
-        </div>
-        <div class="nav-search">
-          <select class="search-select">
-            <option>All</option>
-          </select>
-          <input placeholder="Search Amazon" class="search-input" />
-          <div class="search-icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-        </div>
-
-        <div class="lang border">
-          <i class="fa-solid fa-flag-usa"></i>
-          En
-        </div>
-
-        <div class="nav-sigin border">
-          <p><span>Hello,Sign in</span></p>
-          <p class="nav-second">Accounts & Lists</p>
-        </div>
-
-        <div class="nav-return border">
-          <a class="returns-orders-link" href="returns_orders.html">
-            <p><span>Returns</span></p>
-            <p class="nav-second">& Orders</p>
-          </a>
-        </div>
-
-        <div class="nav-cart border">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <a class="orders-link header-link" href="cart.html">Cart</a>
-        </div>
+    <div class="amazon-header">
+      <div class="amazon-header-left-section">
+        <a href="amazon.html" class="header-link">
+          <img class="amazon-logo"
+            src="images/amazon-logo-white.png">
+          <img class="amazon-mobile-logo"
+            src="images/amazon-mobile-logo-white.png">
+        </a>
       </div>
-    </header>
 
+      <div class="amazon-header-middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+
+        <button class="search-button">
+          <img class="search-icon" src="images/icons/search-icon.png">
+        </button>
+      </div>
+
+      <div class="amazon-header-right-section">
+        <a class="orders-link header-link" href="orders.html">
+          <span class="returns-text">Returns</span>
+          <span class="orders-text">& Orders</span>
+        </a>
+
+        <a class="cart-link header-link" href="checkout.html">
+          <img class="cart-icon" src="images/icons/cart-icon.png">
+          <div class="cart-quantity">3</div>
+          <div class="cart-text">Cart</div>
+        </a>
+      </div>
+    </div>
 
     <div class="main">
       <div class="page-title">Your Orders</div>
@@ -193,67 +181,10 @@
                   Track package
                 </button>
               </a>
-
-    <footer>
-      <div class="foot-panel1">Back to Top</div>
-      <div class="foot-panel2">
-        <ul>
-          <p>Get to Know Us</p>
-          <a>Careers</a>
-          <a>Blog</a>
-          <a>About Amazon</a>
-          <a>Investor Relations</a>
-          <a>Amazon Devices</a>
-          <a>Amazon Science</a>
-        </ul>
-
-        <ul>
-          <p>Make Money with Us</p>
-          <a>Sell on Amazon Business</a>
-          <a>Sell apps on Amazon</a>
-          <a>Become an Affiliate</a>
-          <a>Advertise Your Products</a>
-          <a>Self-Publish with us</a>
-          <a>Host on Amazon Hub</a>
-          <a>See More Make Money with us</a>
-        </ul>
-
-        <ul>
-          <p>Amazon Payment Products</p>
-          <a>Amazon Business Card</a>
-          <a>Shop with Points</a>
-          <a>Peload your Balance</a>
-          <a>Amazon Currency Converter</a>
-        </ul>
-
-        <ul>
-          <p>Let us Help You</p>
-          <a>Amazon and COVID-19</a>
-          <a>Your Account</a>
-          <a>Your Orders</a>
-          <a>Shipping Rates & Policies</a>
-          <a>Returns & Replacements</a>
-          <a>Manage Your Content amd Devices</a>
-          <a>Amazon Assistant</a>
-          <a>Help</a>
-        </ul>
-      </div>
-
-      <div class="foot-panel3">
-        <div class="logo"></div>
-      </div>
-      <div class="foot-panel4">
-        <div class="pages">
-          <a>Conditions of use</a>
-          <a>Privacy notice</a>
-          <a>Your Ads Privacy Choices</a>
-        </div>
-
-        <div class="copyright">
-          © 1996-2023, Amazon.com, Inc. or its affiliates
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-    <script src="scripts/script.js"></script>
+    </div>
   </body>
 </html>
